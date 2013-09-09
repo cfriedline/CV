@@ -1,0 +1,5 @@
+archive
+.texpadtmp
+.DS_Store
+*.pdf
+.hg*

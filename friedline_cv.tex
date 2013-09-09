@@ -1,0 +1,133 @@
+\documentclass[11pt]{moderncv}
+\makeatletter
+\let\saved@bibitem\@bibitem
+\makeatother
+\usepackage{bibentry}
+%\usepackage{hyperref}
+\usepackage[utf8]{inputenc}                   
+\usepackage{fullpage}
+
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}  			% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+                
+                
+\renewcommand*{\namefont}{\fontsize{30}{40}\mdseries\upshape}
+                    
+\firstname{Christopher J.}
+\familyname{Friedline}
+\address{2020 Princess Anne Avenue}{Richmond, VA  23223}   
+\email{cfriedline@vcu.edu}
+\homepage{http://chris.friedline.net}                     
+\mobile{804.690.6559}                      
+
+
+\nopagenumbers{}                             
+
+\begin{document}
+
+%% workaround for bibentry and hypperref
+\bibliographystyle{abbrv}
+\begingroup
+\makeatletter
+\let\@bibitem\saved@bibitem
+\nobibliography{refs}
+\endgroup
+
+\maketitle
+
+\section{Education}
+\cventry{2008--2013}{Doctor of Philosophy, Integrative Life Sciences}{Virginia Commonwealth University}
+{Richmond, VA}{}{}
+\cventry{2007--2008}{Master of Bioinformatics (PSM)}{Virginia Commonwealth University}{Richmond, VA}{}{}   
+\cventry{1995--1999}{Bachelor of Arts, Biology}{Gettysburg College}{Gettysburg, PA}{}{}  
+
+\section{Doctoral dissertation}
+\cvline{Title}{\emph{Phylometagenomics: a new framework for uncovering microbial community diversity}}
+\cvline{Committee}{Maria C. Rivera (advisor), Danail Bonchev, J. Paul Brooks, Rima B. Franklin,  
+Donald R. Young}
+\cvline{Description}{My analyses of the metagenomic 
+sequence data from bacterial communities sampled from different environments demonstrate 
+that the proper identification of the biological processes influencing these 
+communities requires the development and implementation of new statistical and computational
+methodologies that take advantage of the extensive amount of information
+generated in next-generation, high-throughput sequencing projects.}
+
+\section{Master's thesis}
+\cvline{Title}{\emph{SLEDRIDE: Simplified Learning about Expression Data Running in a Desktop 
+Environment}}
+\cvline{Committee}{Paul Fawcett (advisor), James E. Ames, Catherine Dumur, Lemont B. Kier }
+\cvline{Description}{SLEDRIDE is a tool that provides the ability to visually display and analyze 
+microarray expression data in a variety of ways.  With this tool, it is possible to perform 
+multi-experiment, genome-wide microarray studies and examine the correlation coefficients calculated 
+from the dataset.  SLEDRIDE also makes it possible to view your data in genome order, which provides a 
+very effective method  for identifying areas in a genome acting concordantly.}
+\cvline{Website}{\url{http://sledride.csbc.vcu.edu}}
+
+\section{Experience}
+\subsection{Academic}
+\cventry{2013--Present}{NSF Postdoctoral Fellow}{Virginia Commonwealth University}{Richmond, VA}{}
+{Sponsor: Andrew J. Eckert}
+\cventry{2011--2011}{Teaching Assistant}{Virginia Commonwealth University}{Richmond, VA}{}{
+Fundamentals of Molecular Genetics (BIOL 540, 3 credits, 1 section)}
+\cventry{2011--2011}{Teaching Assistant}{Virginia Commonwealth University}{Richmond, VA}{}{
+ Plant and Animal Cell Biology (BIOL 676, 3 credits, 1 section)}
+\cventry{2008--2008}{Teaching Assistant}{Virginia Commonwealth University}{Richmond, VA}{}{
+Integrated Bioinformatics (BNFO 601, 3 credits, 1 section)}
+\cventry{2008--2008}{Adjunct Faculty, Biology}{Virginia Commonwealth University}{Richmond, VA}{}{
+Teaching assistant, Biological Concepts Laboratory  (BIOZ 101, 1 credit, 4 sections)}
+\cventry{2008--2008}{Recitation Leader}{Virginia Commonwealth University}{Richmond, VA}{}{
+Introduction to Life Sciences (LFSC 101, 1 credit, 1 section)}
+
+\subsection{Information Technology}
+\cventry{2006--2007}{Senior Network Analyst}{VCU Health System}{Richmond, VA}{}{}
+\cventry{2005--2006}{IT Systems Manager}{Infralogics, Inc.}{Richmond, VA}{}{}
+
+\cventry{2005--2005}{IT Systems Administrator}{Infineon Technologies/Modis, Inc.}{Sandston, VA}{}{}
+
+\cventry{2002--2005}{Senior Systems Administrator}{Circuit City Stores, Inc}{Richmond, VA}{}{}
+
+\cventry{2002--2002}{NT Systems Administrator}{VIPNet/Bytes Consulting}{Richmond, VA}{}{}
+
+\cventry{2001--2002}{Systems Administrator}{Bentley Systems, Inc.}{Exton, PA}{}{}
+\cventry{2000--2001}{Senior Systems Analyst}{Bentley Systems, Inc.}{Exton, PA}{}{}
+\cventry{1999--2000}{Systems Analyst}{Bentley Systems, Inc.}{Exton, PA}{}{}
+
+ 
+\section{Publications}
+\begingroup
+\cvlistitem{\bibentry{Friedline:2012fm}}
+\cvlistitem{\bibentry{Friedline:2008vo}}
+\endgroup
+
+\section{Presentations}
+\cventry{2009}{Exploring Ocean Microbial Diversity}{Seventh Annual Research Review, Center for 
+the Study of Biological Complexity, VCU}{Richmond, VA}{}{}
+\cventry{2008}{FindSUMO: A PSSM-based Method for Sumoylation Site Prediction}{Fourth International
+Conference on Intelligent Computing}{Shanghai, China}{}{}
+
+\section{Grants and awards}
+\cvline{2013--2016}{NSF Postdoctoral Research Fellowship in Biology: \$207,000}
+\cvline{2008}{Best Paper Award, Fourth International Conference on Intelligent Computing, 
+Shanghai, CN}
+\cvline{2008}{Phi Kappa Phi Life Sciences Masters Scholarship: \$2,500}
+\cvline{1995-1998}{Gettysburg College Presidential Scholarship: \$15,000}
+
+\section{Associations}
+\cvlistitem{Alpha Epsilon Lambda Honor Society}
+\cvlistitem{The Honor Society of Phi Kappa Phi}
+\cvlistitem{Association for Computing Machinery}
+\cvlistitem{American Association for the Advancement of Science}
+
+\section{Technology}
+\cvline{Programming}{Java, Groovy/Grails, Python, Perl, PHP, Git, Mercurial, SVN}
+\cvline{Statistics}{R, JMP, SPSS, PC-ORD, Past}
+\cvline{Operating Systems}{OS X, Linux, Unix, Windows}
+\cvline{Databases}{PostgreSQL, MySQL, SQL Server}
+\cvline{Infrastructure}{Firewalls, VPN, Active Directory/LDAP, DNS, DHCP, WINS, HTTPD, Virtualization}
+
+\section{Professional certifications}
+\cvlistitem{Microsoft Certified Systems Engineer, Windows 2000, 2003}
+\cvlistitem{Microsoft Certified Systems Administrator, Windows 2000, 2003}
+\cvlistitem{Citrix Certified Administrator, MetaFrame Presentation Server XP, 3.0}
+
+\end{document}
