@@ -1,14 +1,32 @@
 \documentclass[11pt]{moderncv}
-\makeatletter
-\let\saved@bibitem\@bibitem
-\makeatother
-\usepackage{bibentry}
-%\usepackage{hyperref}
+\usepackage[backend=biber,
+            sorting=ydnt,
+            natbib=true,
+            style=nature,
+            maxnames=50]{biblatex}
+
+\defbibenvironment{bibliography}
+  {\list
+     {\printtext[labelnumberwidth]{% label format from numeric.bbx
+        \printfield{prefixnumber}%
+        \printfield{labelnumber}}}
+     {\setlength{\topsep}{0pt}% layout parameters from moderncvstyleclassic.sty
+      \setlength{\labelwidth}{\hintscolumnwidth}%
+      \setlength{\labelsep}{\separatorcolumnwidth}%
+      \leftmargin\labelwidth%
+      \advance\leftmargin\labelsep}%
+      \sloppy\clubpenalty4000\widowpenalty4000}
+  {\endlist}
+  {\item}
+
+
 \usepackage[utf8]{inputenc}                   
 \usepackage{fullpage}
 
-\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{black}  			% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+% style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic} 
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{black}  			
                 
                 
 \renewcommand*{\namefont}{\fontsize{30}{40}\mdseries\upshape}
@@ -21,17 +39,10 @@
 \mobile{804.690.6559}                      
 
 
-\nopagenumbers{}                             
+\nopagenumbers{}   
+\addbibresource{refs.bib}                          
 
 \begin{document}
-
-%% workaround for bibentry and hypperref
-\bibliographystyle{abbrv}
-\begingroup
-\makeatletter
-\let\@bibitem\saved@bibitem
-\nobibliography{refs}
-\endgroup
 
 \maketitle
 
@@ -55,7 +66,7 @@ generated in next-generation, high-throughput sequencing projects.}
 \section{Master's thesis}
 \cvline{Title}{\emph{SLEDRIDE: Simplified Learning about Expression Data Running in a Desktop 
 Environment}}
-\cvline{Committee}{Paul Fawcett (advisor), James E. Ames, Catherine Dumur, Lemont B. Kier }
+\cvline{Committee}{Paul M. Fawcett (advisor), James E. Ames, Catherine Dumur, Lemont B. Kier }
 \cvline{Description}{SLEDRIDE is a tool that provides the ability to visually display and analyze 
 microarray expression data in a variety of ways.  With this tool, it is possible to perform 
 multi-experiment, genome-wide microarray studies and examine the correlation coefficients calculated 
@@ -65,7 +76,7 @@ very effective method  for identifying areas in a genome acting concordantly.}
 
 \section{Experience}
 \subsection{Academic}
-\cventry{2013--Present}{NSF Postdoctoral Fellow}{Virginia Commonwealth University}{Richmond, VA}{}
+\cventry{2013--Present}{NSF Postdoctoral Research Fellow}{Virginia Commonwealth University}{Richmond, VA}{}
 {Sponsor: Andrew J. Eckert}
 \cventry{2011--2011}{Teaching Assistant}{Virginia Commonwealth University}{Richmond, VA}{}{
 Fundamentals of Molecular Genetics (BIOL 540, 3 credits, 1 section)}
@@ -92,12 +103,9 @@ Introduction to Life Sciences (LFSC 101, 1 credit, 1 section)}
 \cventry{2000--2001}{Senior Systems Analyst}{Bentley Systems, Inc.}{Exton, PA}{}{}
 \cventry{1999--2000}{Systems Analyst}{Bentley Systems, Inc.}{Exton, PA}{}{}
 
- 
-\section{Publications}
-\begingroup
-\cvlistitem{\bibentry{Friedline:2012fm}}
-\cvlistitem{\bibentry{Friedline:2008vo}}
-\endgroup
+
+\nocite{Gilbreath:2013fw,Friedline:2012fm,Fettweis:2010up,Friedline:2008vo}
+\printbibliography[title={Publications}]
 
 \section{Presentations}
 \cventry{2009}{Exploring Ocean Microbial Diversity}{Seventh Annual Research Review, Center for 
@@ -106,13 +114,15 @@ the Study of Biological Complexity, VCU}{Richmond, VA}{}{}
 Conference on Intelligent Computing}{Shanghai, China}{}{}
 
 \section{Grants and awards}
-\cvline{2013--2016}{NSF Postdoctoral Research Fellowship in Biology: \$207,000}
+\cvline{2013--2016}{NSF Postdoctoral Research Fellowship in Biology: \$216,000}
 \cvline{2008}{Best Paper Award, Fourth International Conference on Intelligent Computing, 
 Shanghai, CN}
 \cvline{2008}{Phi Kappa Phi Life Sciences Masters Scholarship: \$2,500}
 \cvline{1995-1998}{Gettysburg College Presidential Scholarship: \$15,000}
 
 \section{Associations}
+\cvlistitem{Society for the Study of Evolution}
+\cvlistitem{Society for Molecular Biology \& Evolution}
 \cvlistitem{Alpha Epsilon Lambda Honor Society}
 \cvlistitem{The Honor Society of Phi Kappa Phi}
 \cvlistitem{Association for Computing Machinery}
