@@ -1,0 +1,5 @@
+#!/bin/bash
+pdflatex -shell-escape -file-line-error -interaction=nonstopmode -synctex=1 -output-directory=/Users/chris/Documents/CV/.texpadtmp $TEXPAD_ROOTFILE
+biber /Users/chris/Documents/CV/.texpadtmp/$TEXPAD_ROOTFILE_NO_EXT
+pdflatex -shell-escape -file-line-error -interaction=nonstopmode -synctex=1 -output-directory=/Users/chris/Documents/CV/.texpadtmp $TEXPAD_ROOTFILE
+pdflatex -shell-escape -file-line-error -interaction=nonstopmode -synctex=1 -output-directory=/Users/chris/Documents/CV/.texpadtmp $TEXPAD_ROOTFILE
