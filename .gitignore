@@ -3,3 +3,14 @@ archive
 .DS_Store
 *.pdf
 .hg*
+auto
+*.aux
+*.bbl
+*.bcf
+*.blg
+*latexmk
+*.fls
+*.log
+*.out
+*.xml
+*synctex*
