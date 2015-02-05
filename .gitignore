@@ -14,3 +14,4 @@ auto
 *.out
 *.xml
 *synctex*
+*_clean.tex
