@@ -1,0 +1,178 @@
+\documentclass[11pt]{moderncv} 
+\usepackage[utf8]{inputenc}
+\usepackage[backend=biber, sorting=ydnt, natbib=true, style=nature,
+maxnames=50]{biblatex}
+
+\defbibenvironment{bibliography}
+  {\list
+     {\printtext[labelnumberwidth]{% label format from numeric.bbx
+        \printfield{prefixnumber}%
+        \printfield{labelnumber}}}
+     {\setlength{\topsep}{0pt}% layout parameters from moderncvstyleclassic.sty
+      \setlength{\labelwidth}{\hintscolumnwidth}%
+      \setlength{\labelsep}{\separatorcolumnwidth}%
+      \leftmargin\labelwidth%
+      \advance\leftmargin\labelsep}%
+      \sloppy\clubpenalty4000\widowpenalty4000}
+  {\endlist}
+  {\item}
+
+\usepackage{fullpage}
+
+% style options are 'casual' (default), 'classic', 'oldstyle' and
+%'banking' 
+\moderncvstyle{classic} % color options 'blue' (default),
+%'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{black}
+                
+                
+\renewcommand*{\namefont}{\fontsize{30}{40}\mdseries\upshape}
+                    
+\firstname{Christopher J.}  
+\familyname{Friedline} 
+\address{5011 King William Road}{Richmond, VA 23225} 
+\email{cfriedline@vcu.edu}
+\homepage{chris.friedline.net} 
+\mobile{804.537.2580}
+
+\nopagenumbers{} 
+\addbibresource{refs.bib}
+\begin{document}
+
+\maketitle
+
+\section{Education} 
+\cventry{2008--2013}{Doctor of Philosophy,
+Integrative Life Sciences}{Virginia Commonwealth University}
+{Richmond, VA}{}{} 
+\cventry{2007--2008}{Master of Bioinformatics
+(PSM)}{Virginia Commonwealth University}{Richmond, VA}{}{}
+\cventry{1995--1999}{Bachelor of Arts, Biology}{Gettysburg
+College}{Gettysburg, PA}{}{}
+
+
+\section{Doctoral dissertation}
+\cvline{Title}{\emph{Phylometagenomics: a new framework for uncovering
+microbial community diversity}} 
+\cvline{Committee}{Maria C. Rivera
+(advisor), Danail Bonchev, J. Paul Brooks, Rima B. Franklin, Donald
+R. Young} 
+
+\section{Master's thesis} 
+\cvline{Title}{\emph{SLEDRIDE: Simplified
+Learning about Expression Data Running in a Desktop Environment}}
+\cvline{Committee}{Paul M. Fawcett (advisor), James E. Ames, Catherine
+Dumur, Lemont B. Kier } 
+
+\section{Experience}
+\subsection{Academic} 
+\cventry{2013--Present}{NSF Postdoctoral
+Research Fellow}{Virginia Commonwealth University}{Richmond, VA}{}
+{Sponsor: Andrew J. Eckert} 
+\cventry{2011--2011}{Teaching
+Assistant}{Virginia Commonwealth University}{Richmond, VA}{}{
+Fundamentals of Molecular Genetics (BIOL 540, 3 credits, 1 section)}
+\cventry{2011--2011}{Teaching Assistant}{Virginia Commonwealth
+University}{Richmond, VA}{}{ Plant and Animal Cell Biology (BIOL 676,
+3 credits, 1 section)} 
+\cventry{2008--2008}{Teaching
+Assistant}{Virginia Commonwealth University}{Richmond, VA}{}{
+Integrated Bioinformatics (BNFO 601, 3 credits, 1 section)}
+\cventry{2008--2008}{Adjunct Faculty, Biology}{Virginia Commonwealth
+University}{Richmond, VA}{}{ Teaching assistant, Biological Concepts
+Laboratory (BIOZ 101, 1 credit, 4 sections)}
+\cventry{2008--2008}{Recitation Leader}{Virginia Commonwealth
+University}{Richmond, VA}{}{ Introduction to Life Sciences (LFSC 101,
+1 credit, 1 section)}
+
+\subsection{Information Technology} 
+\cventry{2006--2007}{Senior
+Network Analyst}{VCU Health System}{Richmond, VA}{}{}
+\cventry{2005--2006}{IT Systems Manager}{Infralogics, Inc.}{Richmond,
+VA}{}{}
+\cventry{2005--2005}{IT Systems Administrator}{Infineon
+Technologies/Modis, Inc.}{Sandston, VA}{}{}
+\cventry{2002--2005}{Senior Systems Administrator}{Circuit City
+Stores, Inc}{Richmond, VA}{}{}
+\cventry{2002--2002}{NT Systems Administrator}{VIPNet/Bytes
+Consulting}{Richmond, VA}{}{}
+\cventry{2001--2002}{Systems Administrator}{Bentley Systems,
+Inc.}{Exton, PA}{}{} \cventry{2000--2001}{Senior Systems
+Analyst}{Bentley Systems, Inc.}{Exton, PA}{}{}
+\cventry{1999--2000}{Systems Analyst}{Bentley Systems, Inc.}{Exton,
+PA}{}{}
+
+
+\nocite{Gilbreath:2013fw,
+Friedline:2012fm,
+Fettweis:2010up,
+Friedline:2008vo,
+fettweis2012species,
+harwich2012genomic}
+
+\printbibliography[title={Publications}]
+
+\section{Grants and awards} 
+\cvline{2013--2016}{NSF National Plant Genome Initiative Postdoctoral 
+Research Fellowship in Biology: \$216,000} 
+\cvline{2008}{Best Paper
+Award, Fourth International Conference on Intelligent Computing,
+Shanghai, CN}
+\cvline{2008}{Phi Kappa Phi Life Sciences Masters
+Scholarship: \$2,500} 
+\cvline{1995-1998}{Gettysburg College
+Presidential Scholarship: \$15,000}
+
+\section{Service}
+\cvline{2014--Present}{Reviewer for Molecular Phylogenetics and Evolution}
+\cvline{2014--Present}{Reviewer for PLOS ONE}
+\cvline{2014--Present}{Software Carpentry Instructor}
+
+
+\section{Presentations} 
+\cventry{2009}{Exploring Ocean Microbial
+Diversity}{Seventh Annual Research Review, Center for the Study of
+Biological Complexity, VCU}{Richmond, VA}{}{} 
+\cventry{2008}{FindSUMO:
+A PSSM-based Method for Sumoylation Site Prediction}{Fourth
+International Conference on Intelligent Computing}{Shanghai,
+China}{}{}
+
+\section{Posters}
+\cventry{2013}{Preliminary insights into the genome of flowering
+  dogwood (\textit{Cornus florida} L.) - Implications for the study of
+  local adaptation in the Eastern North American Hardwood Forest
+  Ecosystem}{}{Eckert, A.\ J.\, Friedline, C.\ J.\, Eaves, H.\ L.\,
+  Dyer, R.\ J.\, Rivera, M.\ C.\, and Leu, M.}{\textit{Plant and Animal Genome
+  Conference XXI}, San Diego, CA}{}
+
+\section{Associations} 
+\cvlistitem{Society for the Study of Evolution}
+\cvlistitem{Society for Molecular Biology \& Evolution}
+\cvlistitem{Alpha Epsilon Lambda Honor Society} 
+\cvlistitem{The Honor
+Society of Phi Kappa Phi} 
+\cvlistitem{Association for Computing
+Machinery} 
+\cvlistitem{American Association for the Advancement of
+Science}
+
+\section{Technology}
+\cvline{Programming}{Java, Groovy/Grails, Python, Perl, PHP, Git,
+  Mercurial, SVN} 
+\cvline{Statistics}{R, JMP, SPSS, PC-ORD, Past}
+\cvline{Operating Systems}{OS X, Linux, Unix, Windows}
+\cvline{Databases}{PostgreSQL, MySQL, SQL Server}
+\cvline{Infrastructure}{Firewalls, VPN, Active Directory/LDAP,
+  DNS/WINS, DHCP, HTTPD, Virtualization}
+
+\section{Professional certifications}
+\cvlistitem{Microsoft Certified Systems Engineer, Windows 2000, 2003}
+\cvlistitem{Microsoft Certified Systems Administrator, Windows 2000,
+  2003} 
+\cvlistitem{Citrix Certified Administrator, MetaFrame
+  Presentation Server XP, 3.0}
+
+\end{document}
+
+% Local Variables: % reftex-default-bibliography: ("./refs") % End:
