@@ -3,6 +3,14 @@
 \usepackage[backend=biber, sorting=ydnt, natbib=true, style=nature,
 maxnames=50]{biblatex}
 
+\usepackage{fontspec}
+\usepackage{fontawesome}
+
+
+%\setromanfont{Times New Roman}
+%\setsansfont{Arial}
+%\setmonofont[Color={0019D4}]{Courier New}
+
 \defbibenvironment{bibliography}
   {\list
      {\printtext[labelnumberwidth]{% label format from numeric.bbx
@@ -24,9 +32,10 @@ maxnames=50]{biblatex}
 \moderncvstyle{classic} % color options 'blue' (default),
 %'orange', 'green', 'red', 'purple', 'grey' and 'black'
 \moderncvcolor{black}
+\moderncvicons{awesome}
                 
                 
-\renewcommand*{\namefont}{\fontsize{28}{10}\mdseries\upshape}
+\renewcommand*{\namefont}{\fontsize{24}{10}\mdseries\upshape}
                     
 \firstname{Christopher J.}  
 \familyname{Friedline} 
@@ -37,10 +46,37 @@ maxnames=50]{biblatex}
 
 \nopagenumbers{} 
 \addbibresource{refs.bib}
+
+\makeatletter
+\RenewDocumentCommand{\section}{sm}{%
+  \par\addvspace{2.5ex}%
+  \phantomsection{}% reset the anchor for hyperrefs
+  \addcontentsline{toc}{section}{#2}%
+\parbox[t]{\hintscolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}
+{\rule{\hintscolumnwidth}{.5ex}}}%
+  \hspace{\separatorcolumnwidth}%
+  \parbox[t]{\maincolumnwidth}{\strut\sectionstyle{#2}}%
+  \par\nobreak\addvspace{1ex}\@afterheading}% avoid a pagebreak after heading
+\makeatother
+
+
+%\makeatletter
+%\RenewDocumentCommand{\section}{sm}{%
+%  \par\addvspace{2.5ex}%
+%  \phantomsection{}% reset the anchor for hyperrefs
+%  \addcontentsline{toc}{section}{#2}%
+%  {\strut\sectionstyle{#2}}%
+%  \par\nobreak\addvspace{1ex}\@afterheading}% avoid a pagebreak after heading
+%\makeatother
+
 \begin{document}
 
-\maketitle
 
+
+
+\makecvtitle
+
+\patchcmd{\section}{0.95ex}{0.5ex}{}{}
 \section{Education} 
 \cventry{2008--2013}{Doctor of Philosophy,
 Integrative Life Sciences}{Virginia Commonwealth University}
@@ -107,13 +143,15 @@ Presidential Scholarship: \$15,000}
 
 \section{Talks}
 
-\cventry{2105}{Environmental and Phenotypic Associations: (1) Evolutionary
+\cventry{2105}{Environmental and Phenotypic Associations}{\emph{(1)
+Evolutionary
 genetics of associations among genotypes, phenotypes, and environments; (2)
 Empirical methods with which to detect environmental and phenotypic
 associations: single and multiple locus methodologies; (3) Analysis of single
 nucleotide polymorphism datasets for the detection of associations in non-model
-species}{\textit{Bioinformatics for Adaptation Genomics: Adaptation genomics in
-the realm of Next-Generation Sequencing data analysis}}{Weggis, CH}{}{}
+species}}{\textit{Bioinformatics for Adaptation Genomics: Adaptation genomics
+in
+the realm of Next-Generation Sequencing data analysis}}{Weggis, CH}{}
 
 \cventry{2014}{Genetic architecture of developmental traits in populations of
 male gypsy moths}{\textit{Evolution}}{Raleigh, NC}{}{} 
@@ -128,6 +166,8 @@ International Conference on Intelligent Computing}{Shanghai,
 China}{}{}
 
 \section{Posters}
+%\cventry{2014}{title}{}{authors}{\textit{conference}, place}{}
+
 
 \cventry{2014}{Local adaptation and linkage maps--a first step towards the
 genomic architecture of fitness-related phenotypes in natural
@@ -139,6 +179,17 @@ Eckert}{\textit{Evolution}, Raleigh, NC}{}
 Genetic Architecture of Pine Populations in the Southeastern United
 States}{}{Christopher J.\ Friedline and Andrew E. Eckert}{\textit{National
 Science Foundation annual award meeting}, Arlington, VA}{}
+
+\cventry{2014}
+{Genome-wide effects of factorial fire and thinning in
+fire-suppressed populations of Jeffrey pine (\textit{Pinus jeffreyi}) and sugar
+pine (\textit{P.\ lambertiana})}
+{}
+{Brandon M.\ Lind, Christopher J.\ Friedline, Erin M.\ Hobson, Malcolm 
+P.\ North, and Andrew J.\ Eckert}
+{\textit{Evolution}, Raleigh, NC}
+{}
+
 
 \cventry{2013}{Preliminary insights into the genome of flowering
   dogwood (\textit{Cornus florida} L.) - Implications for the study of
