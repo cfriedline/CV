@@ -3,7 +3,7 @@ def main():
 		for line in open("friedline_cv.tex"):
 			line = line.strip()
 			if '\\address' in line:
-				line = "\\address{hidden}{hidden}"
+				line = "\\address{Address hidden}{Address hidden}"
 			o.write("%s\n" % line)
 
 if __name__ == '__main__':
