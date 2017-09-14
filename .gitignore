@@ -16,3 +16,4 @@ auto
 *synctex*
 *_clean.tex
 *.dvi
+.latex.json
