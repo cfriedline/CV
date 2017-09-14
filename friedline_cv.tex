@@ -1,4 +1,4 @@
-\documentclass[11pt, letter]{moderncv} 
+\documentclass[11pt, letter]{moderncv}
 \usepackage[backend=biber, sorting=ydnt, natbib=true, style=nature,
 maxnames=50]{biblatex}
 
@@ -29,20 +29,20 @@ maxnames=50]{biblatex}
 \usepackage{fullpage}
 
 % style options are 'casual' (default), 'classic', 'oldstyle' and
-%'banking' 
+%'banking'
 \moderncvstyle{classic} % color options 'blue' (default),
 %'orange', 'green', 'red', 'purple', 'grey' and 'black'
 \moderncvcolor{black}
 %\moderncvicons{awesome}
 \renewcommand*{\namefont}{\fontsize{24}{10}\mdseries\upshape}
-\firstname{Christopher J.}  
-\familyname{Friedline} 
-\address{5011 King William Road}{Richmond, VA 23225} 
-\email{cfriedline@vcu.edu}
-\homepage{chris.friedline.net} 
+\firstname{Christopher J.}
+\familyname{Friedline}
+\address{5011 King William Road}{Richmond, VA 23225}
+\email{chris@friedline.net}
+\homepage{chris.friedline.net}
 \mobile{804.537.2580}
 
-\nopagenumbers{} 
+\nopagenumbers{}
 \addbibresource{refs.bib}
 
 \makeatletter
@@ -72,10 +72,10 @@ maxnames=50]{biblatex}
 \makecvtitle
 
 \patchcmd{\section}{0.95ex}{0.5ex}{}{}
-\section{Education} 
+\section{Education}
 \cventry{2008--2013}{Doctor of Philosophy,
 Integrative Life Sciences}{Virginia Commonwealth University}
-{Richmond, VA}{}{} 
+{Richmond, VA}{}{}
 \cventry{2007--2008}{Master of Bioinformatics
 (PSM)}{Virginia Commonwealth University}{Richmond, VA}{}{}
 \cventry{1995--1999}{Bachelor of Arts, Biology}{Gettysburg
@@ -84,26 +84,34 @@ College}{Gettysburg, PA}{}{}
 
 \section{Doctoral dissertation}
 \cvline{}{\emph{Phylometagenomics: a new framework for uncovering
-microbial community diversity}} 
+microbial community diversity}}
 \cvline{}{Maria C. Rivera
 (advisor), Danail Bonchev, J. Paul Brooks, Rima B. Franklin, Donald
-R. Young} 
+R. Young}
 
-\section{Master's thesis} 
+\section{Master's thesis}
 \cvline{}{\emph{SLEDRIDE: Simplified
 Learning about Expression Data Running in a Desktop Environment}}
 \cvline{}{Paul M. Fawcett (advisor), James E. Ames, Catherine
-Dumur, Lemont B. Kier } 
+Dumur, Lemont B. Kier }
 
-\section{Academic experience}
-\cventry{2015--Present}{Adjunct Assistant Professor}{Randolph-Macon
+\section{Professional and academic experience}
+
+\cventry{2016--present}{Director of Bioinformatics and Information
+Technology}{Granger Genetics, LLC.}{Richmond, VA}{}{}
+
+\cventry{2016--2016}{Postdoctoral
+Research Fellow}{Virginia Commonwealth University}{Richmond, VA}{}
+{PI: Andrew J.\ Eckert}
+
+\cventry{2015--2016}{Adjunct Assistant Professor}{Randolph-Macon
 College}{Ashland, VA}{}{
 $\circ$ Evolution (BIOL 205, 3 credits/1 section, Fall 2015) \\
 $\circ$ Evolution (BIOL 205, 3 credits/1 section, Spring 2016)}
 
-\cventry{2013--Present}{NSF Postdoctoral
+\cventry{2013--2016}{NSF Postdoctoral
 Research Fellow}{Virginia Commonwealth University}{Richmond, VA}{}
-{Sponsor: Andrew J. Eckert} 
+{PI: Christopher J.\ Friedline; Sponsor: Andrew J.\ Eckert}
 
 \cventry{2011--2011}{Teaching
 Assistant}{Virginia Commonwealth University}{Richmond, VA}{}{
@@ -122,10 +130,27 @@ Lab (BIOZ 101, 1 credit, 4 sections) \\
 $\circ$ Recitation Leader, Introduction to Life Sciences (LFSC 101, 1 credit,
 1 section)}
 
+\cventry{2006--2007}{Senior
+Network Analyst}{VCU Health System}{Richmond, VA}{}{}
+\cventry{2005--2006}{IT Systems Manager}{Infralogics, Inc.}{Richmond,
+VA}{}{}
+\cventry{2005--2005}{IT Systems Administrator}{Infineon
+Technologies/Modis, Inc.}{Sandston, VA}{}{}
+\cventry{2002--2005}{Senior Systems Administrator}{Circuit City
+Stores, Inc}{Richmond, VA}{}{}
+\cventry{2002--2002}{NT Systems Administrator}{VIPNet/Bytes
+Consulting}{Richmond, VA}{}{}
+\cventry{2001--2002}{Systems Administrator}{Bentley Systems,
+Inc.}{Exton, PA}{}{} \cventry{2000--2001}{Senior Systems
+Analyst}{Bentley Systems, Inc.}{Exton, PA}{}{}
+\cventry{1999--2000}{Systems Analyst}{Bentley Systems, Inc.}{Exton,
+PA}{}{}
+
 
 \nocite{
+MEC:MEC14106,
 Friedline:2015bx,
-Caplins2014, 
+Caplins2014,
 Gilbreath:2013fw,
 Friedline:2012fm,
 Friedline:2008vo,
@@ -134,19 +159,25 @@ harwich2012genomic}
 
 \printbibliography[title={Publications}]
 
-\section{Grants and awards} 
-\cvline{2013--2016}{NSF National Plant Genome Initiative Postdoctoral 
-Research Fellowship in Biology: \$216,000} 
+\section{Grants and awards}
+\cvline{2013--2016}{NSF National Plant Genome Initiative Postdoctoral
+Research Fellowship in Biology: \$216,000}
 \cvline{2008}{Best Paper
 Award, Fourth International Conference on Intelligent Computing,
 Shanghai, CN}
 \cvline{2008}{Phi Kappa Phi Life Sciences Masters
-Scholarship: \$2,500} 
+Scholarship: \$2,500}
 \cvline{1995-1998}{Gettysburg College
 Presidential Scholarship: \$15,000}
 
 
 \section{Guest lectures and talks}
+
+\cventry{2016}{Barking up the right trees: the influence of forest fire on the
+genetic architecture of bark thickness in southeastern
+pines}{\textit{Evolution
+2016}}{Austin, TX}{}{}
+
 
 \cventry{2105}{Environmental and Phenotypic Associations}{\emph{(1)
 Evolutionary
@@ -169,14 +200,14 @@ NC} {} {}
 {BIOL318: Evolution, VCU}} {Richmond, VA} {} {}
 
 \cventry{2014}{Genetic architecture of developmental traits in populations of
-male gypsy moths}{\textit{Evolution 2014}}{Raleigh, NC}{}{} 
+male gypsy moths}{\textit{Evolution 2014}}{Raleigh, NC}{}{}
 
 \cventry{2012}{Aspects and applications of next-generation sequencing}{\textit
 {BIOL540: Fundamentals of Molecular Genetics, VCU}} {Richmond, VA} {} {}
- 
+
 \cventry{2009}{Exploring ocean microbial
 diversity}{Seventh Annual Research Review, Center for the Study of
-Biological Complexity, VCU}{Richmond, VA}{}{} 
+Biological Complexity, VCU}{Richmond, VA}{}{}
 
 \cventry{2008}{FindSUMO:
 A PSSM-based method for sumoylation site prediction}{Fourth
@@ -185,6 +216,33 @@ China}{}{}
 
 \section{Posters}
 %\cventry{year}{title}{}{authors}{\textit{conference}, place}{}
+
+\cventry{2016}{The ecological genomics of gypsy moth invasion along a
+latitudinal gradient}{}
+{Christopher J.\ Friedline,
+Trevor Faske,
+Kristine Grayson,
+Derek Johnson,
+Dylan Parry,
+Andrew J.\ Eckert}{\textit{Evolution
+2016}, Austin, TX}{}
+
+\cventry{2016}{The genetic architecture of invasion at the range margin}{}
+{Trevor Faske,
+Lily Thompson,
+Christopher J.\ Friedline,
+Salvatore Agosta,
+Derek Johnson,
+Kristine Grayson,
+Andrew J.\ Eckert}{\textit{Evolution
+2016}, Austin, TX}{}
+
+
+\cventry{2016}{The Origin of species: Influence of demography and climate on
+patterns of genetic diversity in \textit{Pinus strobiformis}
+(Southwestern White Pine}{}{Mitra Menon, Christopher J.\ Friedline, Daniel
+McGarvey Anna Schoettle, Sam Cushman, Andrew J.\ Eckert}{\textit{Evolution
+2016}, Austin, TX}{}
 
 \cventry{2015}{Barking up the Right Trees: the Influence of Forest Fire on the
 Genetic Architecture of Pine Populations in the Southeastern United
@@ -215,7 +273,7 @@ Arlington, VA}{}
 fire-suppressed populations of Jeffrey pine (\textit{Pinus jeffreyi}) and sugar
 pine (\textit{P.\ lambertiana})}
 {}
-{Brandon M.\ Lind, Christopher J.\ Friedline, Erin M.\ Hobson, Malcolm 
+{Brandon M.\ Lind, Christopher J.\ Friedline, Erin M.\ Hobson, Malcolm
 P.\ North, and Andrew J.\ Eckert}
 {\textit{Evolution 2014}, Raleigh, NC}
 {}
@@ -225,53 +283,38 @@ P.\ North, and Andrew J.\ Eckert}
   dogwood (\textit{Cornus florida} L.) - Implications for the study of
   local adaptation in the Eastern North American Hardwood Forest
   Ecosystem}{}{Andrew J.\ Eckert, Christopher J.\ Friedline, Hugh L.\
-  Eaves, Rodney J.\ Dyer, Maria C.\ Rivera, and Matthias Leu}{\textit{Plant and Animal Genome
+Eaves, Rodney J.\ Dyer, Maria C.\ Rivera, and Matthias Leu}{\textit{Plant and
+Animal Genome
   Conference XXI}, San Diego, CA}{}
 
 \section{Service}
+\cvline{2016--Present}{Data Carpentry Instructor}
 \cvline{2014--Present}{Reviewer for Molecular Phylogenetics and Evolution}
 \cvline{2014--Present}{Reviewer for PLOS ONE}
 \cvline{2014--Present}{Software Carpentry Instructor}
 
-\section{Associations} 
+\section{Associations, past and present}
 \cvlistitem{Society for the Study of Evolution}
 \cvlistitem{Society for Molecular Biology \& Evolution}
-\cvlistitem{Alpha Epsilon Lambda Honor Society} 
-\cvlistitem{The Honor Society of Phi Kappa Phi} 
-\cvlistitem{Association for Computing Machinery} 
+\cvlistitem{Alpha Epsilon Lambda Honor Society}
+\cvlistitem{The Honor Society of Phi Kappa Phi}
+\cvlistitem{Association for Computing Machinery}
 \cvlistitem{American Association for the Advancement of Science}
 
 %\section{Technology}
 %\cvline{Programming}{Java, Groovy/Grails, Python, Perl, PHP, Git,
-%  Mercurial, SVN} 
+%  Mercurial, SVN}
 %\cvline{Statistics}{R, JMP, SPSS, PC-ORD, Past}
 %\cvline{Operating Systems}{OS X, Linux, Unix, Windows}
 %\cvline{Databases}{PostgreSQL, MySQL, SQL Server}
 %\cvline{Infrastructure}{Firewalls, VPN, Active Directory/LDAP,
 %  DNS/WINS, DHCP, HTTPD, Virtualization}
 
-\section{Information Technology experience} 
-\cventry{2006--2007}{Senior
-Network Analyst}{VCU Health System}{Richmond, VA}{}{}
-\cventry{2005--2006}{IT Systems Manager}{Infralogics, Inc.}{Richmond,
-VA}{}{}
-\cventry{2005--2005}{IT Systems Administrator}{Infineon
-Technologies/Modis, Inc.}{Sandston, VA}{}{}
-\cventry{2002--2005}{Senior Systems Administrator}{Circuit City
-Stores, Inc}{Richmond, VA}{}{}
-\cventry{2002--2002}{NT Systems Administrator}{VIPNet/Bytes
-Consulting}{Richmond, VA}{}{}
-\cventry{2001--2002}{Systems Administrator}{Bentley Systems,
-Inc.}{Exton, PA}{}{} \cventry{2000--2001}{Senior Systems
-Analyst}{Bentley Systems, Inc.}{Exton, PA}{}{}
-\cventry{1999--2000}{Systems Analyst}{Bentley Systems, Inc.}{Exton,
-PA}{}{}
-
 
 \section{Professional certifications}
 \cvlistitem{Microsoft Certified Systems Engineer, Windows 2000, 2003}
 \cvlistitem{Microsoft Certified Systems Administrator, Windows 2000,
-  2003} 
+  2003}
 \cvlistitem{Citrix Certified Administrator, MetaFrame
   Presentation Server XP, 3.0}
 
