@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /Users/chris/Documents/CV
+cd /Users/chris/Google\ Drive/Documents/CV
 pdflatex -shell-escape -file-line-error -interaction=nonstopmode -synctex=1 -output-directory=.texpadtmp $TEXPAD_ROOTFILE
 /usr/texbin/biber --output_directory=.texpadtmp $TEXPAD_ROOTFILE_NO_EXT
 pdflatex -shell-escape -file-line-error -interaction=nonstopmode -synctex=1 -output-directory=.texpadtmp $TEXPAD_ROOTFILE
