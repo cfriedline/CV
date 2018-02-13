@@ -17,3 +17,5 @@ auto
 *_clean.tex
 *.dvi
 .latex.json
+jobs
+*.xdv
